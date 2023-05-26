@@ -1,21 +1,16 @@
 {
+  "extends": "../../tsconfig.base",
   "compilerOptions": {
-    "composite": true
+    "composite": true,
+    "rootDir": "src",
+    "outDir": "build",
+    "tsBuildInfoFile": "build/.tsbuildinfo",
+    "emitDeclarationOnly": true,
+    "lib": ["DOM", "ESNext"],
+    "noImplicitReturns": false,
+    "skipLibCheck": true,
+    "jsx": "react"
   },
-  "files": [],
-  "include": [],
-  "references": [
-    {
-      "path": "./packages/notion-types/tsconfig.json"
-    },
-    {
-      "path": "./packages/notion-utils/tsconfig.json"
-    },
-    {
-      "path": "./packages/notion-client/tsconfig.json"
-    },
-    {
-      "path": "./packages/react-notion-x/tsconfig.json"
-    }
-  ]
+  "include": ["src"],
+  "references": [{ "path": "../notion-types" }, { "path": "../notion-utils" }]
 }
