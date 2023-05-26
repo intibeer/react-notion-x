@@ -40,8 +40,7 @@ export const LiteYouTubeEmbed: React.FC<{
   )
   // const mobileResolution = 'hqdefault'
   // const desktopResolution = 'maxresdefault'
-  const resolution = 'hqdefault'
-  const posterUrl = `https://i.ytimg.com/vi/${id}/${resolution}.jpg`
+  const posterUrl = `https://storage.googleapis.com/temporaryids-cdn/writefull_video_placeholder.png`
   const ytUrl = 'https://www.youtube-nocookie.com'
   const iframeSrc = `${ytUrl}/embed/${id}?${queryString}`
 
